@@ -1,0 +1,65 @@
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --madrid : rgb(0, 38, 255) ;
+    --paris : rgb(255, 235, 15);
+    --berlin : 5rem ;
+    --moscou : center;  
+}
+
+
+
+
+/* MOBILE */
+@media ( width <= 750px) {
+
+    .entete, .menu{
+        background-color: var(--paris);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    a{
+        color: rgb(250, 255, 240);
+    }
+
+}
+
+/* TABLETTE & DESKTOP */
+
+
+@media (width > 750px){
+    .entete {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.menu {
+    display: flex;
+    padding: 3px;
+
+}
+
+img{
+    border-radius: 10px;
+}
+
+li {
+    list-style-type: none;
+    
+}
+
+a {
+    text-decoration: none;
+    margin-right: 1rem;
+}
+}
+
+
+
+

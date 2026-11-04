@@ -1,0 +1,152 @@
+/* ---------- 1. Base ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fffdf9;
+  color: #2a2118;
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+/* ---------- 2. En-tête et menu ---------- */
+.entete {
+  background-color: #2b241d;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  color: #fffdf9;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- 3. Bannière ---------- */
+.banniere {
+  background-color: #f3e8dc;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.banniere h1 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.banniere p {
+  font-size: 0.9rem;
+  margin-bottom: 30px;
+}
+
+.bouton {
+  display: inline-block;
+  background-color: #b5651d;
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-decoration: none;
+  padding: 12px 28px;
+  border-radius: 6px;
+}
+
+.bouton:hover {
+  background-color: #8f4e14;
+}
+
+/* ---------- 4. Les trois espaces ---------- */
+.espaces {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 50px 0 40px;
+}
+
+.espaces h2 {
+  text-align: center;
+  font-size: 1.25rem;
+  margin-bottom: 25px;
+}
+
+.cartes {
+  display: flex;
+  gap: 24px;
+}
+
+.carte {
+  flex: 1;
+  background-color: #fff;
+  border: 1px solid #e8dccb;
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.carte h3 {
+  color: #b5651d;
+  font-size: 1.05rem;
+  margin-bottom: 15px;
+}
+
+.carte p {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.carte a {
+  color: #b5651d;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-decoration: underline;
+}
+
+/* ---------- 5. Horaires et adresse ---------- */
+.infos {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  border-top: 1px solid #e8dccb;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.infos h2 {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+
+.infos ul {
+  padding-left: 20px; /* remet les puces visibles, le reset les avait collées */
+}
+
+.infos li,
+.infos p {
+  font-size: 0.9rem;
+}
+
+/* ---------- 6. Pied de page ---------- */
+.pied {
+  background-color: #2b241d;
+  color: #f3e8dc;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.85rem;
+}
